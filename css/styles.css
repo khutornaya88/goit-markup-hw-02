@@ -6,7 +6,7 @@
   --white-text-color: #ffffff;
   --secondary-bg-color: #2f303a;
   --team-bg-color: #f5f4fa;
-  --secondary-button-bg: #188CE8;
+  --secondary-button-bg: #188ce8;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -22,17 +22,17 @@ ul {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
+/* Webstudio and Portfolio Header */
 /* Logo */
 .logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1,19;
+  line-height: 1.2;
 }
 
 .second-part-logo {
@@ -40,16 +40,16 @@ a {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1,19;
+  line-height: 1.2;
 }
 
 /* Navigation */
 
 .site-nav .link {
-  color: var(--title-text-color); 
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1,2;
+  line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
@@ -66,7 +66,7 @@ a {
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1,2;
+  line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
@@ -85,8 +85,8 @@ a {
   color: var(--white-text-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1,4;
-  letter-spacing: 0.06em; 
+  line-height: 1.4;
+  letter-spacing: 0.06em;
 }
 
 /* Button */
@@ -94,13 +94,16 @@ a {
   color: var(--white-text-color);
   background-color: var(--accent-color);
   font-weight: 700;
+  font-family: inherit;
   font-size: 16px;
-  line-height: 1,9;
+  line-height: 1.9;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
-.button:hover {
-background-color: var(--secondary-button-bg);
+.button:hover,
+.button:focus {
+  background-color: var(--secondary-button-bg);
 }
 
 /* First section */
@@ -109,13 +112,13 @@ background-color: var(--secondary-button-bg);
   color: var(--title-text-color);
   font-weight: 400;
   font-size: 14px;
-  line-height: 1,14;
+  line-height: 1.14;
 }
 
 .description-title {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1,7;
+  line-height: 1.7;
 }
 
 /* Work section */
@@ -124,7 +127,7 @@ background-color: var(--secondary-button-bg);
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1,2;
+  line-height: 1.2;
   text-align: center;
 }
 
@@ -134,7 +137,7 @@ background-color: var(--secondary-button-bg);
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1,2;
+  line-height: 1.2;
   text-align: center;
 }
 
@@ -142,22 +145,22 @@ background-color: var(--secondary-button-bg);
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1,2;
+  line-height: 1.2;
 }
 
 .team-list .profession {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1,2;
+  line-height: 1.2;
 }
 
-/* Footer */
+/* Webstudio and Portfolio Footer */
 .part-logo {
   color: var(--white-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1,2;
+  line-height: 1.2;
 }
 .footer-section {
   background-color: var(--secondary-bg-color);
@@ -168,7 +171,7 @@ background-color: var(--secondary-button-bg);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1,7;
+  line-height: 1.7;
 }
 
 .contacts .link {
@@ -176,10 +179,53 @@ background-color: var(--secondary-button-bg);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1,7;
+  line-height: 1.7;
 }
 
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
+}
 
+/* Portfolio main section */
+
+.button-filter {
+  color: var(--title-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+.portfolio-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  color: var(--main-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.portfolio-title:hover,
+.portfolio-title:focus {
+  color: var(--accent-color);
+}
+
+.portfolio-text:hover,
+.portfolio-text:focus {
+  color: var(--accent-color);
+}
